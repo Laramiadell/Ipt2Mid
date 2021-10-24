@@ -31,7 +31,7 @@ class PostController extends Controller
 
     public function createnewpost() {
         $categories = Category::all();
-        return view('create', compact('categories'));
+        return view('createpost', compact('categories'));
     }
 
     public function storenewpost(Request $request) {
