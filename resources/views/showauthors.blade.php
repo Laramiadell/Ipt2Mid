@@ -1,5 +1,5 @@
 @extends('base')
-
+<br><br><br><br>
 @section('content')
   <div class="container">
     <h1 class="headertxt">Authors</h1>
