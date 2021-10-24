@@ -30,5 +30,5 @@ Route::get('/home', [PostController::class, 'index'])->middleware('auth');
 Route::get('/authors', [PostController::class, 'showauthors'])->middleware('auth');
 Route::get('/categories/{category}', [PostController::class, 'postscategory'])->middleware('auth');
 Route::get('/authors/{user}', [PostController::class, 'showauthorposts'])->middleware('auth');
-Route::get('/createnewpost', [PostController::class, 'createnewpost'])->middleware('auth');
-Route::post('/createnewpost', [PostController::class, 'storenewpost'])->middleware('auth');
+Route::get('/createpost', [PostController::class, 'createnewpost'])->middleware('auth');
+Route::post('/createpost', [PostController::class, 'storenewpost'])->middleware('auth');
