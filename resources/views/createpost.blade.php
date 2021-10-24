@@ -1,12 +1,12 @@
 @extends('base')
-
+<br><br><br>
 @section('content')
     <div class="container">
         <div class="mt-2"><a href="{{ url('/') }}" class="btn btn-primary text-white">Back</a></div>
         <div class="row mb-2">
         <div class="col-md-4 offset-4">
             <div class="card">
-                <div class="card-header bg-primary text-white">
+                <div class="card-header text-black">
                     <h3>Create New Post</h3>
                 </div>
                 <div class="card-body">
