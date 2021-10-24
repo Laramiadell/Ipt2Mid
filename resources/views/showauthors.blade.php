@@ -10,13 +10,10 @@
     @else
     <div class="card m-1 mb-3 pb-3 pt-3" style="background-color: lightpink">
     @endif
-    <div class="card-body">
-      <h5 class="card-title">
-        <i class="fas fa-user"></i> {{$user->name}}
-      </h5>
-      <h3>
-      <a href="/authors/{{$user->id}}" class="btn text-white">Author Posts <i class="fas fa-comment-edit"></i></a>
-      </h3>
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-user"></i> {{$user->name}}</h5>
+        <a href="/authors/{{$user->id}}" class="btn">Show Posts <i class="fas fa-angle-double-right"></i></a>
+      </div>
     </div>
     @endforeach
   </div> 
